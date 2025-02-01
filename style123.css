@@ -1,0 +1,29 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;background-color: black;
+
+}
+
+h1{
+    text-align: center;
+    font-size: 10px;
+    font-family: Ewardian scrit 
+    ITC;
+    background: linear-gradient(45deg,yellow,deeppink,cyan,lime);
+    background-size: 47px;
+    color: transparent;
+    background-clip: text;
+    width: 10rem;
+    animation: vibrate-zoom 3s
+    linear infinite 1s;
+}
+@keyframes vibrate-zoom{
+    0%{transform: skewY(0deg);}
+    40%{transform: scaleX(30deg);}
+    60%{transform: rotateY(50deg);}
+    80%{transform: scaleX(30deg);}
+    100%{transform: scaleY(0deg);
+    font-size: 60px;}
+}
